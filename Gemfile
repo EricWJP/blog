@@ -48,5 +48,14 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# Pg is the Ruby interface to the {PostgreSQL RDBMS}[http://www.postgresql.org/]
+group :production do
+  gem 'pg', '~> 1.0'
+end
+
+# rdoc generator html with javascript search index.
+group :doc do
+  gem 'sdoc', '~> 0.4.2'
+end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
